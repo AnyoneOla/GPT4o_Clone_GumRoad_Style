@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://db.onlinewebfonts.com/c/9b06ae83a4412168ed194a8ed31218c2?family=Mabry+Pro+Medium" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPT 4o Neo Brutalism</title>
+    
+    <script type="module" crossorigin src="/assets/index-B5p-2KMt.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cmgs2m7z.css">
+  </head>
+  <body>
+    <div id="root" style="position: relative;"></div>
+    <script>
+          window.addEventListener('scroll', function() {
+          var navbar = document.getElementById('navbar');
+          var initialOffsetVh = 37.8; // Initial position from the top in vh
+
+          // Convert initial offset from vh to pixels
+          var initialOffsetPx = (initialOffsetVh / 100) * window.innerHeight;
+
+          if (window.pageYOffset >= initialOffsetPx) {
+              navbar.style.position = 'fixed';
+              navbar.style.top = '0';
+              navbar.style.left = '0px';
+          } else {
+              navbar.style.position = 'absolute';
+              navbar.style.left = '0px';
+              navbar.style.top = initialOffsetVh + 'vh';
+          }
+      });
+
+      window.addEventListener('scroll', function() {
+      const parallax = document.querySelector('#s1');
+      let scrollPosition = window.pageYOffset;
+      parallax.style.transform = 'translateY(' + scrollPosition * -0.1 + 'px)';      
+      
+      const paralla1 = document.querySelector('#s2');
+      let scrollPosition1 = window.pageYOffset;
+      paralla1.style.transform = 'translateY(' + scrollPosition1 * -0.1 + 'px)'; 
+
+      const paralla2 = document.querySelector('#s3');
+      let scrollPosition2 = window.pageYOffset;
+      paralla2.style.transform = 'translateY(' + scrollPosition2 * -0.15 + 'px)'; 
+    });
+    </script>
+  </body>
+</html>
